@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(new MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: BillSplitter(),
   ));
 }
@@ -21,6 +22,12 @@ class _BillSplitterState extends State<BillSplitter> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0.0,
+        centerTitle: true,
+        title: Text("Bill Splitter",style: TextStyle(color: Colors.black),),
+      ),
       body: Container(
         margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.1),
         alignment: Alignment.center,
