@@ -1,4 +1,4 @@
-# bill_spliter
+# Bill Splitter
 
 A new Flutter project.
 
